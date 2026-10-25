@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroMarket — магазин электроники</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- 1. Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">⚡ Electro<span>Market</span></a>
+      <nav class="nav">
+        <a href="#top">Главная</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#promo">Акции</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 2. Главный экран -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="hero__tag">Новая коллекция 2026</span>
+          <h1>Техника для учебы, работы и жизни</h1>
+          <p>Современная электроника по доступным ценам</p>
+          <div class="hero__buttons">
+            <a href="#catalog" class="btn btn--accent">Смотреть товары</a>
+            <a href="#about" class="btn btn--ghost">Узнать больше</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <svg viewBox="0 0 320 260" class="hero__svg">
+            <rect x="40" y="30" width="220" height="140" rx="12" fill="#2a2660" stroke="#8b7cff" stroke-width="4"/>
+            <rect x="54" y="44" width="192" height="112" rx="6" fill="#16133a"/>
+            <path d="M70 130 L110 95 L140 115 L185 70 L230 100" fill="none" stroke="#ffd23f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="185" cy="70" r="7" fill="#ffd23f"/>
+            <path d="M20 178 H280 L264 198 H36 Z" fill="#8b7cff"/>
+            <rect x="228" y="120" width="70" height="120" rx="12" fill="#ffd23f"/>
+            <rect x="236" y="132" width="54" height="90" rx="5" fill="#16133a"/>
+            <circle cx="263" cy="231" r="4" fill="#16133a"/>
+            <path d="M258 160 L250 180 H264 L256 200" fill="none" stroke="#ffd23f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Категории -->
+    <section class="section" id="categories">
+      <div class="container">
+        <h2 class="section__title">Категории</h2>
+        <div class="categories">
+          <a href="#catalog" class="category"><span class="category__icon">💻</span>Ноутбуки</a>
+          <a href="#catalog" class="category"><span class="category__icon">📱</span>Смартфоны</a>
+          <a href="#catalog" class="category"><span class="category__icon">🎧</span>Наушники</a>
+          <a href="#catalog" class="category"><span class="category__icon">⌨️</span>Аксессуары</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Популярные товары -->
+    <section class="section section--soft" id="catalog">
+      <div class="container">
+        <h2 class="section__title">Популярные товары</h2>
+        <div class="products">
+
+          <article class="card">
+            <span class="badge badge--hit">ХИТ</span>
+            <div class="card__img">
+              <svg viewBox="0 0 120 90" aria-hidden="true">
+                <rect x="22" y="14" width="76" height="50" rx="5" fill="#2a2660"/>
+                <rect x="28" y="20" width="64" height="38" rx="2" fill="#8b7cff"/>
+                <path d="M10 66 H110 L104 74 H16 Z" fill="#16133a"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Ноутбук</h3>
+            <p class="card__desc">15,6″ экран, 16 ГБ памяти и SSD — для учебы и работы.</p>
+            <div class="card__bottom">
+              <div class="price"><span class="price__old">52 000 сом</span>45 000 сом</div>
+              <a href="#contact-form" class="btn btn--small">Купить</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="badge badge--sale">СКИДКА</span>
+            <div class="card__img">
+              <svg viewBox="0 0 120 90" aria-hidden="true">
+                <rect x="40" y="6" width="40" height="78" rx="8" fill="#16133a"/>
+                <rect x="44" y="14" width="32" height="58" rx="3" fill="#ff7a59"/>
+                <circle cx="60" cy="78" r="2.5" fill="#8b7cff"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Смартфон</h3>
+            <p class="card__desc">Яркий AMOLED-дисплей и камера 108 Мп.</p>
+            <div class="card__bottom">
+              <div class="price"><span class="price__old">34 000 сом</span>28 000 сом</div>
+              <a href="#contact-form" class="btn btn--small">Купить</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <svg viewBox="0 0 120 90" aria-hidden="true">
+                <path d="M30 52 V42 a30 30 0 0 1 60 0 V52" fill="none" stroke="#16133a" stroke-width="7" stroke-linecap="round"/>
+                <rect x="20" y="48" width="20" height="30" rx="8" fill="#8b7cff"/>
+                <rect x="80" y="48" width="20" height="30" rx="8" fill="#8b7cff"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Беспроводные наушники</h3>
+            <p class="card__desc">Bluetooth 5.3, шумоподавление, до 30 часов работы.</p>
+            <div class="card__bottom">
+              <div class="price">2 500 сом</div>
+              <a href="#contact-form" class="btn btn--small">Купить</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="badge badge--hit">ХИТ</span>
+            <div class="card__img">
+              <svg viewBox="0 0 120 90" aria-hidden="true">
+                <rect x="38" y="8" width="44" height="74" rx="22" fill="#16133a"/>
+                <line x1="60" y1="10" x2="60" y2="36" stroke="#2fd3a0" stroke-width="3"/>
+                <rect x="57" y="18" width="6" height="12" rx="3" fill="#2fd3a0"/>
+                <path d="M42 60 Q60 70 78 60" fill="none" stroke="#2fd3a0" stroke-width="3"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Игровая мышь</h3>
+            <p class="card__desc">Сенсор 16 000 DPI и RGB-подсветка.</p>
+            <div class="card__bottom">
+              <div class="price">1 200 сом</div>
+              <a href="#contact-form" class="btn btn--small">Купить</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <svg viewBox="0 0 120 90" aria-hidden="true">
+                <rect x="8" y="26" width="104" height="40" rx="6" fill="#16133a"/>
+                <g fill="#ffd23f">
+                  <rect x="14" y="32" width="10" height="8" rx="2"/><rect x="28" y="32" width="10" height="8" rx="2"/><rect x="42" y="32" width="10" height="8" rx="2"/><rect x="56" y="32" width="10" height="8" rx="2"/><rect x="70" y="32" width="10" height="8" rx="2"/><rect x="84" y="32" width="10" height="8" rx="2"/><rect x="98" y="32" width="8" height="8" rx="2"/>
+                  <rect x="14" y="44" width="14" height="8" rx="2"/><rect x="32" y="44" width="10" height="8" rx="2"/><rect x="46" y="44" width="10" height="8" rx="2"/><rect x="60" y="44" width="10" height="8" rx="2"/><rect x="74" y="44" width="10" height="8" rx="2"/><rect x="88" y="44" width="18" height="8" rx="2"/>
+                  <rect x="30" y="55" width="60" height="7" rx="2"/>
+                </g>
+              </svg>
+            </div>
+            <h3 class="card__title">Клавиатура</h3>
+            <p class="card__desc">Механическая, тихие переключатели, подсветка клавиш.</p>
+            <div class="card__bottom">
+              <div class="price">2 000 сом</div>
+              <a href="#contact-form" class="btn btn--small">Купить</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="badge badge--sale">СКИДКА</span>
+            <div class="card__img">
+              <svg viewBox="0 0 120 90" aria-hidden="true">
+                <rect x="12" y="8" width="96" height="58" rx="5" fill="#16133a"/>
+                <rect x="17" y="13" width="86" height="48" rx="2" fill="#2fd3a0"/>
+                <rect x="54" y="66" width="12" height="12" fill="#2a2660"/>
+                <rect x="38" y="78" width="44" height="6" rx="3" fill="#2a2660"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Монитор</h3>
+            <p class="card__desc">27″, IPS-матрица, 165 Гц — четкая картинка без бликов.</p>
+            <div class="card__bottom">
+              <div class="price"><span class="price__old">18 500 сом</span>15 000 сом</div>
+              <a href="#contact-form" class="btn btn--small">Купить</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <svg viewBox="0 0 120 90" aria-hidden="true">
+                <rect x="47" y="2" width="26" height="86" rx="6" fill="#8b7cff"/>
+                <rect x="38" y="22" width="44" height="46" rx="12" fill="#16133a"/>
+                <circle cx="60" cy="45" r="14" fill="none" stroke="#ff7a59" stroke-width="3"/>
+                <path d="M60 37 V45 L66 49" fill="none" stroke="#ffd23f" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Smart Watch</h3>
+            <p class="card__desc">Пульс, шаги, уведомления и защита от воды.</p>
+            <div class="card__bottom">
+              <div class="price">5 500 сом</div>
+              <a href="#contact-form" class="btn btn--small">Купить</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <svg viewBox="0 0 120 90" aria-hidden="true">
+                <rect x="30" y="10" width="60" height="72" rx="10" fill="#16133a"/>
+                <rect x="52" y="4" width="16" height="8" rx="2" fill="#2a2660"/>
+                <path d="M64 26 L50 50 H62 L56 68 L72 42 H60 Z" fill="#ffd23f"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Power Bank</h3>
+            <p class="card__desc">20 000 мАч и быстрая зарядка — телефон всегда в строю.</p>
+            <div class="card__bottom">
+              <div class="price">1 800 сом</div>
+              <a href="#contact-form" class="btn btn--small">Купить</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Акция -->
+    <section class="promo" id="promo">
+      <div class="container promo__inner">
+        <div>
+          <h2 class="promo__title">Скидки до 30%</h2>
+          <p class="promo__text">Только на этой неделе! Успейте приобрести технику по специальной цене.</p>
+        </div>
+        <a href="#catalog" class="btn btn--dark">Посмотреть акции</a>
+      </div>
+    </section>
+
+    <!-- 6. Почему выбирают нас -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Почему выбирают нас?</h2>
+        <div class="features">
+          <div class="feature">
+            <span class="feature__icon">🚚</span>
+            <h3>Быстрая доставка</h3>
+            <p>Привезем заказ по городу в течение дня, а в регионы — за 2–3 дня.</p>
+          </div>
+          <div class="feature">
+            <span class="feature__icon">🛡️</span>
+            <h3>Гарантия качества</h3>
+            <p>Только оригинальная техника с официальной гарантией до 2 лет.</p>
+          </div>
+          <div class="feature">
+            <span class="feature__icon">💰</span>
+            <h3>Доступные цены</h3>
+            <p>Работаем напрямую с поставщиками, поэтому цены ниже рыночных.</p>
+          </div>
+          <div class="feature">
+            <span class="feature__icon">☎️</span>
+            <h3>Поддержка клиентов</h3>
+            <p>Консультанты помогут выбрать технику и ответят на любые вопросы.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. О нас -->
+    <section class="section section--soft" id="about">
+      <div class="container about">
+        <h2 class="section__title">О нас</h2>
+        <p>ElectroMarket — это современный магазин электроники, который работает для студентов, специалистов и всех, кто ценит качественную технику. Мы тщательно отбираем товары и предлагаем только проверенные бренды. В нашем каталоге есть всё: от ноутбуков и смартфонов до наушников и полезных аксессуаров. Мы стараемся, чтобы покупка была простой, быстрой и приятной. Ваше доверие — наша главная награда.</p>
+      </div>
+    </section>
+
+    <!-- 8. Форма обратной связи -->
+    <section class="section" id="contact-form">
+      <div class="container">
+        <h2 class="section__title">Связаться с нами</h2>
+        <form class="form" action="#" method="post">
+          <div class="form__row">
+            <label class="form__field">
+              <span>Имя</span>
+              <input type="text" name="name" placeholder="Ваше имя" required>
+            </label>
+            <label class="form__field">
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+996 ___ ___ ___">
+            </label>
+          </div>
+          <label class="form__field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="example@mail.kg">
+          </label>
+          <label class="form__field">
+            <span>Сообщение</span>
+            <textarea name="message" rows="5" placeholder="Напишите ваш вопрос..."></textarea>
+          </label>
+          <button type="submit" class="btn btn--accent">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 9. Контакты -->
+    <section class="section section--soft" id="contacts">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        <ul class="contacts">
+          <li><span>📍</span><b>Адрес:</b> г. Манас</li>
+          <li><span>📞</span><b>Телефон:</b> +996 XXX XXX XXX</li>
+          <li><span>✉️</span><b>Email:</b> info@electromarket.kg</li>
+          <li><span>🕐</span><b>Время работы:</b> 09:00–18:00</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 10. Подвал -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo">⚡ Electro<span>Market</span></a>
+      <nav class="footer__nav">
+        <a href="#top">Главная</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <p class="footer__copy">© 2026 ElectroMarket. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Кнопка «Наверх» -->
+  <a href="#top" class="to-top" title="Наверх">↑ Наверх</a>
+
+</body>
+</html>
